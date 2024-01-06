@@ -30,7 +30,7 @@ _ENV_INFO = {
         'reg_w': 1.0 / 33,
         'soc_w': 0.0 / 33,
         'dis_w': 6.0 / 33,
-        'enable_FDI': False,
+        'enable_FDI': True,
         'attack_start_time': 1.0,
         'attack_end_time': 5.0,
         'attack_position1': ['675'],

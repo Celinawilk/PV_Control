@@ -37,7 +37,7 @@ def parse_arguments():
     parser.add_argument('--env_name', default='13Bus_PV_Attack')
     parser.add_argument('--seed', type=int, default=1, metavar='N',
                         help='random seed')
-    parser.add_argument('--num_steps', type=int, default=2000, metavar='N',
+    parser.add_argument('--num_steps', type=int, default=1000, metavar='N',
                         help='maximum number of steps')
     parser.add_argument('--num_workers', type=int, default=3, metavar='N',
                         help='number of parallel processes')
@@ -91,8 +91,8 @@ def run_episodic_a2c_agent(args, worker_idx=None):
     """
     # output file
     if args.do_testing:
-        fout = open('C:/Users/wilke/Downloads/powergym-master/systems/13_Bus_FDI.csv', 'w')
-        fout2 = open('C:/Users/wilke/Downloads/powergym-master/systems/13Bus_PV_Attack/Training_FDI.csv', 'w')
+        fout = open('C:/Users/wilke/Downloads/PV_Control/systems/13_Bus_Test.csv', 'w')
+        fout2 = open('C:/Users/wilke/Downloads/PV_Control/systems/13Bus_PV_Attack/Training_Test.csv', 'w')
 
 
 
